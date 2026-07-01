@@ -276,8 +276,35 @@
 <script>
 // ========== STATE ==========
 let state = {
-  sprint: 'Sprint #1',
-  tasks: [],
+  sprint: 'Sprint #1 (01-07/07/2026)',
+  tasks: [
+    // 🏥 HEALTH — 5 KH Phòng khám
+    {id:1001, title:'Soạn danh sách 20 PK mục tiêu (TPHCM)', assignee:'Dũng (Sales)', status:'todo', priority:'high', blocker:''},
+    {id:1002, title:'Xác định pricing gói HIS SaaS', assignee:'BS. Khoa + CFO Hà Linh', status:'todo', priority:'high', blocker:''},
+    {id:1003, title:'Chuẩn bị landing page / demo HIS', assignee:'Tú (FE) + BS. Khoa', status:'todo', priority:'high', blocker:''},
+    {id:1004, title:'Chuẩn bị proposal / deck bán hàng HIS', assignee:'Dũng + Ngân', status:'todo', priority:'high', blocker:''},
+    {id:1005, title:'Gọi điện/gặp 10 PK đầu tiên', assignee:'Dũng (Sales)', status:'todo', priority:'high', blocker:''},
+    {id:1006, title:'Soạn hợp đồng mẫu SaaS PK', assignee:'LS. Tâm (Legal)', status:'todo', priority:'medium', blocker:''},
+    {id:1007, title:'Hỗ trợ kỹ thuật onboard KH HIS', assignee:'Bảo (BE) + Quân (DevOps)', status:'todo', priority:'medium', blocker:''},
+    // 👮 GOV — CPMS Công an xã
+    {id:2001, title:'Xác định địa bàn tiềm năng CPMS', assignee:'Ông Phúc (Gov)', status:'todo', priority:'high', blocker:''},
+    {id:2002, title:'Chuẩn bị hồ sơ năng lực CPMS + DVC', assignee:'Ông Phúc + Ngân', status:'todo', priority:'high', blocker:''},
+    {id:2003, title:'Liên hệ 1-2 xã mục tiêu, sắp xếp demo', assignee:'Dũng + Ông Phúc', status:'todo', priority:'high', blocker:''},
+    {id:2004, title:'Soạn hợp đồng mẫu CPMS', assignee:'LS. Tâm (Legal)', status:'todo', priority:'medium', blocker:''},
+    // 📊 ERP — ERPNEXT
+    {id:3001, title:'Xác định 5 DN nhỏ mục tiêu cần ERP', assignee:'Dũng + Đức', status:'todo', priority:'high', blocker:''},
+    {id:3002, title:'Chuẩn bị ERPNEXT demo environment', assignee:'Quân (DevOps)', status:'todo', priority:'high', blocker:''},
+    {id:3003, title:'Cấu hình ERPNEXT — kế toán/kho/bán', assignee:'Đức (ERP)', status:'todo', priority:'high', blocker:''},
+    {id:3004, title:'Soạn proposal ERPNEXT vs Misa/Fast', assignee:'Đức + Ngân', status:'todo', priority:'high', blocker:''},
+    {id:3005, title:'Demo ERPNEXT cho KH đầu tiên', assignee:'Đức + Dũng', status:'todo', priority:'high', blocker:''},
+    {id:3006, title:'Soạn hợp đồng ERP', assignee:'LS. Tâm (Legal)', status:'todo', priority:'medium', blocker:''},
+    // 🛠 CHUNG
+    {id:4001, title:'Xây landing page tổng Tekvi sản phẩm', assignee:'Tú (FE)', status:'todo', priority:'high', blocker:''},
+    {id:4002, title:'Thiết lập quy trình support / onboarding', assignee:'Thảo (CS)', status:'todo', priority:'medium', blocker:''},
+    {id:4003, title:'Content social B2B (LinkedIn, FB groups)', assignee:'Ngân (MKT)', status:'todo', priority:'medium', blocker:''},
+    {id:5001, title:'Daily standup + tổng hợp EOD', assignee:'SM (Tekvi AI)', status:'in-progress', priority:'high', blocker:''},
+    {id:5002, title:'Update Sprint Dashboard + tracking', assignee:'SM (Tekvi AI)', status:'in-progress', priority:'high', blocker:''}
+  ],
   dailies: []
 };
 
